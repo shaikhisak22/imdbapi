@@ -1,0 +1,78 @@
+In this Assignment I used the Basic Authentication to ADD Movie,UPDATE Movie,DELETE Movie,ADD Genre
+
+
+'''API to Register User and Admin'''
+localhost:5000/movie/register/
+method - post
+You need to pass following data to register user or admin(default role user)
+'''Request Body'''
+{"fullname" : "string",
+"username" : "string",
+"password" : string or integers or both,
+"email" :  "email",
+"contact" : bigint
+"role" : "string"
+}
+
+
+'''API to Create Movie'''
+localhost:5000/movies/
+method - post
+You need to pass following data
+'''Request Body'''
+{"username" : "string",
+"password" : string or integers or both,
+"movie_name" : "string",
+"director_name" : "string",
+"imdb_score" : float,
+"popularity": float,
+"genre" : ["string","string"]
+}
+
+'''API to Retrive all Movies'''
+localhost:5000/movies/
+method - get
+
+
+'''API to Delete Movie info'''
+localhost:5000/movies/id/  --> pass the id of movie which you want to delete
+method - delete
+'''Request Header'''
+{"username" : "string",
+"password" : string or integers or both
+}
+
+
+'''API to Retrive Single Movie info'''
+localhost:5000/movies/id/  --> pass the id of movie which you want to Retrive
+method - get
+
+
+'''API to Update Movie info'''
+localhost:5000/movies/id/   --> pass the id and data of movie to update the movie info
+method - put
+You need to pass following data
+'''Request Body'''
+{"username" : "string",
+"password" : string or integers or both,
+"movie_name" : "string",
+"director_name" : "string",
+"imdb_score" : float,
+"popularity": float,
+"genre" : ["string","string"]
+}
+
+
+'''API to Add Genre'''
+localhost:5000/genre/
+method - post
+'''Request Body'''
+{"username" : "string",
+"password" : string or integers or both,
+"genre_name" : "string"
+}
+
+
+'''API to Retrive Genre'''
+localhost:5000/genre/
+method - get
